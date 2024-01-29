@@ -2,7 +2,7 @@ const rows = 20;
 const columns = 20;
 const arrayDiv = document.querySelector('#array');
 const genArrayBtn = document.getElementById('generate-array');
-let hiddenText = document.querySelectorAll('.hidden');
+
 
 
 
@@ -21,5 +21,5 @@ function genArray() {
     
 genArrayBtn.className += 'hidden';
 
-}
 
+}
