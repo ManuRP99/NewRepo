@@ -1,0 +1,31 @@
+@font-face {
+    font-family: VT323-Regular;
+    src: url(./VT323-Regular.ttf)
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    font-family: VT323-Regular;
+}
+
+.big-div {
+    display: inline-block;
+    width: 50vw;
+    height: 90vh;
+    position: absolute;
+    margin: 5vh 0;
+}
+
+.left {
+    left: 0;
+}
+
+.right{
+    left: 50%;
+}
