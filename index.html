@@ -8,28 +8,17 @@
     <title>Manu Ramos</title>
 </head>
 <body>
-    <div class="big-div left">
-        <h1 class="title">Hello!</h1>
-        <p class="text">My name is Manu Ramos and during the day I'm a musician/producer</p>
-        
-        <p class="text">But at night I'm studying code!</p>
-
-        <div id="array-border-one">
-            <div id="array-border-two">
-                <div id="array-border-three">
-                    <div id="array"></div>
-                </div>
-            </div>
-        </div>
-        <button id="generate-array" onclick="showArray(emptyArray)">Click me!</button>
-        <p class="text">I find the fact that i know how to create a 2D Array very cool.</p>
-        <p class="text">But i don't really know what to do with it</p>
-        <button id="random-pixel" class="hidden" onclick="showRandomCell()">Click me!</button>
-    </div>
-    <div class="big-div right">
-        <h1 class="title">This is what i normally do:</h1>
-        
-        <div class="video-example">(YouTube links will go here, the channel is called UbaManu Music)</div>
+    <div id="terminalScreen">
+        <img src="./styles/scanlines.png" id="scan" class="noselect">
+        <img src="./styles/bezel.png" id="bezel" class="noselect">
+        <div id="content">
+            <div id="array"></div>
+            <button id="generate-array" onclick="showArray(emptyArray)">Click me!</button>
+            <button id="random-pixel" class="hidden" onclick="showRandomCell()">Click me!</button>
+            <p class="text">Hi! My name is Manu and I'm beggining my code learning with a lot of useless 2D arrays. 
+            </p> 
+            <p class="text">I hope at some point I'll figure out something cool to do with them.</p>
+        </div>   
     </div>
 </body>
 </html>

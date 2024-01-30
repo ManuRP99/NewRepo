@@ -1,93 +1,87 @@
 @font-face {
     font-family: VT323-Regular;
-    src: url(./VT323-Regular.ttf)
+    src: url('./styles/VT323-Regular.ttf');
 }
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    /* border: 1px solid white; */
-    background-color: black;
+    /* background-color: black;
     color: white;
-    overflow: hidden;
+    border: 1px solid beige; */
     font-family: VT323-Regular;
+    
 }
 
-.big-div {
-    display: inline-block;
-    width: 50vw;
-    height: 90vh;
+body {
+    background-color: black;
+}
+
+#terminalScreen {
+    width: 85vw;
+    height: 85vh;
+    background-color: green;
+    position: relative;
+    margin: 7.5vh 7.5vw;
+}
+
+#scan, #bezel {
     position: absolute;
-    margin: 5vh 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
 }
 
-
-
-.left {
-    left: 5px;
+#scan {
+    opacity: 80%;
 }
 
-.right{
-    left: 52%;
+#content {
+    padding: 60px;
+    color: greenyellow;
+    font-size: 25px;
+    text-shadow: 1px 1px 2px rgb(168, 202, 148), 0 0 1em rgb(168, 202, 148), 0 0 0.2em rgb(168, 202, 148);
 }
 
-.title {
-    text-shadow: 3px 3px #505050;
-    text-align: center;
-}
-
-#array-border-one {
-    background-color: #202020;
-    border: 0;
-    padding: 2px;
-    max-width: 412px;
-    margin: 30px auto;
-}
-
-#array-border-two {
-    background-color: #404040;
-    border: 0;
-    padding: 2px;
-}
-
-#array-border-three {
-    background-color: #505050;
-    border: 0;
-    padding: 2px;
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
 }
 
 #array {
+    width: 400px;
+    margin: auto;
     display: grid;
     grid-template-rows: repeat(20, 20px);
     grid-template-columns: repeat(20, 20px);
 }
 
-#generate-array {
-    position: absolute;
-    width: 50px;
-    height: 30px;
-    left: 298px;
-    top: 285px;
-    
-}
-
-#random-pixel {
-    position: relative;
-    width: 50px;
-    height: 30px;
-    left: 409px;
-    top: -57px;
+#generate-array, #random-pixel {
+    background-color: greenyellow;
+    color: green;
 }
 
 .pixel {
-    border: 1px solid #202020
-}
-
-.alive {
-    background-color: #808080;
+    border: 1px solid greenyellow;
 }
 
 .hidden {
     display: none;
+}
+
+.alive {
+    background-color: greenyellow;
+}
+
+.text {
+    width: fit-content;
+    max-width: 60%;
+    margin: 5px auto;
+    font-size: 12px;
 }

@@ -45,4 +45,3 @@ function showRandomCell() {
 };
 
 //works until here
-
