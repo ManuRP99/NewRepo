@@ -16,7 +16,7 @@ body {
     background-color: black;
 }
 
-#terminalScreen {
+.terminalScreen {
     width: 85vw;
     height: 85vh;
     background-color: green;
@@ -24,7 +24,7 @@ body {
     margin: 7.5vh 7.5vw;
 }
 
-#scan, #bezel {
+.scan, .bezel {
     position: absolute;
     left: 0;
     top: 0;
@@ -33,15 +33,18 @@ body {
     pointer-events: none;
 }
 
-#scan {
-    opacity: 80%;
+.scan {
+    opacity: 75%;
+    z-index: 1;
 }
 
-#content {
+.content {
     padding: 60px;
-    color: greenyellow;
+    color: rgb(195, 255, 105);
     font-size: 25px;
     text-shadow: 1px 1px 2px rgb(168, 202, 148), 0 0 1em rgb(168, 202, 148), 0 0 0.2em rgb(168, 202, 148);
+    position: relative;
+    
 }
 
 .noselect {
@@ -65,6 +68,7 @@ body {
 #generate-array, #random-pixel {
     background-color: greenyellow;
     color: green;
+    position: relative;
 }
 
 .pixel {
@@ -84,4 +88,20 @@ body {
     max-width: 60%;
     margin: 5px auto;
     font-size: 12px;
+    margin-top: 10px;
 }
+
+#videos {
+    height: 85vh;
+    width: 85vw;
+    margin-top: 15vh;
+
+}
+
+.video-div {
+    width: fit-content;
+    height: fit-content;
+    margin: 50px auto;
+    
+}
+

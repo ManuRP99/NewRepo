@@ -8,17 +8,31 @@
     <title>Manu Ramos</title>
 </head>
 <body>
-    <div id="terminalScreen">
-        <img src="./styles/scanlines.png" id="scan" class="noselect">
-        <img src="./styles/bezel.png" id="bezel" class="noselect">
-        <div id="content">
+    <div class="terminalScreen">
+        <img src="./styles/scanlines.png" class="scan" class="noselect">
+        <img src="./styles/bezel.png" class="bezel" class="noselect">
+        <div class="content">
             <div id="array"></div>
             <button id="generate-array" onclick="showArray(emptyArray)">Click me!</button>
             <button id="random-pixel" class="hidden" onclick="showRandomCell()">Click me!</button>
             <p class="text">Hi! My name is Manu and I'm beggining my code learning with a lot of useless 2D arrays. 
             </p> 
             <p class="text">I hope at some point I'll figure out something cool to do with them.</p>
+            <p class="text">Scroll down for more!</p>
         </div>   
+    </div>
+    <div id="videos">
+        <div class="terminalScreen">
+            <img src="./styles/scanlines.png" class="scan" class="noselect">
+            <img src="./styles/bezel.png" class="bezel" class="noselect">
+            <div class="content">
+                <p class="text">Apart from an aspiring developer, I've always been a musician</p>
+                <p class="text">This is me:</p>
+                <div class="video-div">
+                    <iframe id="video-one"src="https://www.youtube.com/embed/J7Sh34swnZY?controls=0" frameborder="0" height="300" width="500"></iframe>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
