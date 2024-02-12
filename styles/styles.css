@@ -105,13 +105,19 @@ body {
 	width: fit-content;
 	max-width: 95%;
 	overflow-wrap: break-word;
-	margin: 25px auto;
+	margin: 5px auto;
 	font-size: 10px;
 }
 
 #arrHours {
 	margin-top: 150px;
 }
-#arrSeconds {
+#arrSeconds1 {
 	margin-bottom: 150px;
+}
+#arrMinutes {
+	margin-top: 15px;
+}
+#arrSeconds {
+	margin-top: 15px;
 }
