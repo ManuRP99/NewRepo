@@ -71,24 +71,20 @@ body {
     position: relative;
 }
 
-.pixel {
-    border: 1px solid greenyellow;
-}
+
 
 .hidden {
     display: none;
 }
 
-.alive {
-    background-color: greenyellow;
-}
+
 
 .text {
     width: fit-content;
     max-width: 60%;
     margin: 5px auto;
-    font-size: 12px;
-    margin-top: 10px;
+    font-size: 16px;
+	top: 95%;
 }
 
 #videos {
@@ -105,3 +101,17 @@ body {
     
 }
 
+.clockArray {
+	width: fit-content;
+	max-width: 95%;
+	overflow-wrap: break-word;
+	margin: 25px auto;
+	font-size: 10px;
+}
+
+#arrHours {
+	margin-top: 150px;
+}
+#arrSeconds {
+	margin-bottom: 150px;
+}
