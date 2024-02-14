@@ -35,9 +35,6 @@ function setClock() {
 	fillWithT(barMinutes1, minutes);
 	fillWithT(barSeconds, seconds);
 	fillWithT(barSeconds1, seconds);
-//	console.log(hours);
-//	console.log(minutes);
-//	console.log(seconds);
 }
 
 setInterval(setClock, 1000)
